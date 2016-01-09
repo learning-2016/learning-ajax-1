@@ -4,7 +4,7 @@ function process() {
 	* Start interval when typing a keyword in the 
 	* field 
 	*/
-	var timOut = setInterval(function(){  
+	var timeOut = setInterval(function(){  
 		var food = encodeURIComponent(document.getElementById("userInput").value);
 		var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
@@ -14,10 +14,13 @@ function process() {
 		};
 		xhttp.open("GET", "foodstore.php?food=" + food, true);
 		xhttp.send(); 
-	}, 2000); 
 
-	/**
-	* Clear timeout after interval  
-	*/
-	clearInterval(timeOut); 
+		
+		/**
+		* Clear timeout after interval  
+		*/
+		clearInterval(timeOut);
+
+	}, 1000); 
+
 }
