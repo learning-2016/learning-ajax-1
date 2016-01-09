@@ -8,10 +8,10 @@ echo '<response>';
 	
 	if(in_array($food,$foodArray)){
 		echo 'We do have '.$food.'!';
-	}else if($food = ""){
+	}else if($food == ""){
 		echo 'Enter a food gwapo.';
 	}else{
 		echo 'Sorry gwapo we dont sell no '.$food.'!';
 	}
-echo '</response>';
-?>
+echo '</response>'; 
+?> 
